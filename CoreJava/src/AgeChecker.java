@@ -4,8 +4,8 @@ public class AgeChecker {
 
 	public static void main(String[] args) {
 		int age;
-		Scanner sc=new Scanner(System.in);
-		age=sc.nextInt();
+		Scanner scc=new Scanner(System.in);
+		age=scc.nextInt();
 		if(age<60)
 		{
 			System.out.println("Age is less then Sixty");
@@ -14,6 +14,7 @@ public class AgeChecker {
 		{
 			System.out.println("Age is greater then Sixty");
 		}
+		scc.close();
 
 	}
 

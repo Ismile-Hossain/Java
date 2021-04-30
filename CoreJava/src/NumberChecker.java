@@ -19,7 +19,7 @@ public class NumberChecker {
 		break;
 		default:System.out.println("Number is not matched with anyone");
 	    }
-
+		sc.close();
 	}
 
 }

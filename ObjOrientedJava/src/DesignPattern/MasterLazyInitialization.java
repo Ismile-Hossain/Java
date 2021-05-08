@@ -9,8 +9,13 @@ public class MasterLazyInitialization {
 	{
 		
 	}
-	public static  MasterLazyInitialization getInstanceVar()
+	public static synchronized  MasterLazyInitialization getInstanceVar()
 	{
+		/*
+		 * it is ok with single thread.
+		 * But problem occured with multi-thread;
+		 * To solve use sychronized in this funtion.
+		 */
 		if(obj==null)
 		{
 			obj=new  MasterLazyInitialization();
